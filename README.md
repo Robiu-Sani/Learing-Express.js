@@ -36,6 +36,11 @@ Follow these steps to set up your project:
     ```bash
     $ npm install cookie-parser cors dotenv jsonwebtoken mongodb bcrypt
     ```
+ 6. **Run Project**
+    ```
+    $ npm install -g nodemon
+    nodemon index.js
+    ```
 
     - **cookie-parser**: Middleware for parsing cookies attached to client request objects.
     - **cors**: Configures Cross-Origin Resource Sharing (CORS) to enable access from different domains.
@@ -76,6 +81,7 @@ To deploy your project, run:
 ```bash
 $ vercel
 $ vercel --prod
+```
 
 ### default route
 ``` default route
