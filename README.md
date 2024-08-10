@@ -77,13 +77,14 @@ To deploy your project, run:
 $ vercel
 $ vercel --prod
 
-```
-//default route
+### default route
+``` default route
 app.get("/", (req, res) => {
   res.send("single building website api");
 });
-
-//listing port
+```
+### listing port
+``` listing port
 app.listen(port, () => {
   console.log(`server port is ${port}`);
 });
