@@ -1,0 +1,52 @@
+Installation Commands:
+
+1. Create a new directory for your project and navigate into it:
+$ mkdir myapp
+$ cd myapp
+
+2. Initialize a new Node.js project:
+$ npm init
+
+3. Install Express.js:
+$ npm install express
+
+4. Install Vercel globally to deploy your project:
+$ npm install -g vercel
+
+5. Install the following packages:
+$ npm install cookie-parser cors dotenv jsonwebtoken mongodb bcrypt
+
+- **cookie-parser**: This middleware parses cookies attached to the client request object.
+- **cors**: This package allows you to configure Cross-Origin Resource Sharing, enabling your application to access resources from different domains.
+- **dotenv**: This package loads environment variables from a .env file into process.env, keeping sensitive data like API keys secure.
+- **jsonwebtoken**: This package is used to create and verify JSON Web Tokens (JWT), often used for secure data transmission and authentication.
+- **mongodb**: This package is the official MongoDB driver for Node.js, enabling your application to connect to and interact with a MongoDB database.
+- **bcrypt**: This package helps you hash passwords, providing a secure way to store passwords in your database.
+
+6. Create a Vercel configuration file (vercel.json):
+vercel.json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js",
+      "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+    }
+  ]
+}
+
+- **vercel.json**: This configuration file tells Vercel how to build and deploy your project. It specifies the build step using the "@vercel/node" builder for a Node.js application, and routes all HTTP methods to your index.js file.
+
+Note: Replace "index.js" with the actual entry point file of your project if it has a different name.
+
+Deploying command 
+$ vercel
+$ vercel --prod
+
