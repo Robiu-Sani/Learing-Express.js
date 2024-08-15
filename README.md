@@ -24,6 +24,23 @@ Follow these steps to set up your project:
     ```bash
     $ npm install express
     ```
+    
+. **Install packages:**
+
+    ```bash
+    npm install bcrypt
+npm install cookie-parser
+npm install cors
+npm install dotenv
+npm install express
+npm install jsonwebtoken
+npm install mongodb
+
+    ```
+    ```
+    npm install bcrypt cookie-parser cors dotenv express jsonwebtoken mongodb
+
+    ```
 
 4. **Install Vercel globally to deploy your project:**
 
