@@ -35,11 +35,10 @@ npm install dotenv
 npm install express
 npm install jsonwebtoken
 npm install mongodb
-
     ```
-    ```
+    .
+    ```base
     npm install bcrypt cookie-parser cors dotenv express jsonwebtoken mongodb
-
     ```
 
 4. **Install Vercel globally to deploy your project:**
