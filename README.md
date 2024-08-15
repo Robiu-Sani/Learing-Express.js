@@ -25,18 +25,18 @@ Follow these steps to set up your project:
     $ npm install express
     ```
     
-. **Install packages:**
+**Install packages:**
 
     ```bash
     npm install bcrypt
-npm install cookie-parser
-npm install cors
-npm install dotenv
-npm install express
-npm install jsonwebtoken
-npm install mongodb
+    npm install cookie-parser
+    npm install cors
+    npm install dotenv
+    npm install express
+    npm install jsonwebtoken
+    npm install mongodb
     ```
-    .
+    -- at all in one
     ```base
     npm install bcrypt cookie-parser cors dotenv express jsonwebtoken mongodb
     ```
